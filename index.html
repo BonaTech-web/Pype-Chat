@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Social Platform</title>
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script defer src="script.js"></script>
+
+
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Social Platform</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Profile</a>
+            <a href="#">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="post-form">
+            <h2>Create a Post</h2>
+            <textarea placeholder="What's on your mind?" id="displayArea"></textarea>
+            <button id="btn">Post</button>
+
+        </section>
+
+        <section class="feed">
+            <h2>Feed</h2>
+            <!--User comment section-->
+            <div class="userPost"> </div>
+
+            <!-- Comment section -->
+            <div class="post">
+                <p><strong>Joey</strong> <span>- 2 mins ago</span></p>
+                <p>This app is so cool</p>
+            </div>
+
+            <!-- Comment section2-->
+            <div class="post">
+                <p><strong>Freddy</strong> <span>- 10 mins ago</span></p>
+                <p>Hey guys</p>
+            </div>
+
+            <div class="post">
+                <p><strong>Potter</strong> <span>- 10 mins ago</span></p>
+                <p>So cool</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Social Platform | <a href="#">Privacy Policy</a> | <a href="#">Contact</a></p>
+    </footer>
+
+</body>
+</html>
